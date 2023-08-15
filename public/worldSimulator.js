@@ -45,10 +45,12 @@ function Animate(){
 	var _context = getContext();	
 	
 	if (typeof _map == 'undefined'){
-		_map = new map(25,25);
+		_map = new map(50,50);
+		_map.setPixelWidth(_context.width);
+		_map.setPixelHeight(_context.height);
 		_map.initialize();
 	}	
 
-	_map.render();
+	_map.render(_context.context);
 }
 

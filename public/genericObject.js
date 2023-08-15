@@ -7,6 +7,7 @@ class genericObject {
 	#type;	//object type
 	#x;		// horizontal position in map
 	#y;		//vertical position in map
+	#color;	// color
 	
 	static get WATERSTORAGE(){
 		return c_waterstorage;
@@ -43,6 +44,14 @@ class genericObject {
 	
 	getY(){
 		return this.#y;
+	}
+	
+	setColor(i_value){
+		this.#color = i_value;
+	}
+	
+	getColor(){
+		return this.#color;
 	}
 		
 }

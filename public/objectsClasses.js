@@ -8,6 +8,7 @@ class waterStorage extends genericObject {
 	
 	constructor(){
 		super(genericObject.WATERSTORAGE);
+		this.setColor("lightblue");
 		this.#max = 0;
 		this.#volume = 0;
 		this.#recharge = 100;		
@@ -48,11 +49,26 @@ class waterStorage extends genericObject {
 }
 
 /*------------------------------------------------------------------------------*/
-/* Class field                                                                  */
+/* Class defining a petrol storage                                                */
+class petrolStorage extends genericObject {
+
+	constructor(){
+		super(genericObject.PETROL);
+		this.setColor("black");	
+	}
+	
+	initialize(){		
+	}	
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* Class for field                                                                  */
 class field extends genericObject {
 
 	constructor(){
 		super(genericObject.FIELD);		
+		this.setColor("green");
 	}
 	
 	initialize(){		
