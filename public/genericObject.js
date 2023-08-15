@@ -1,6 +1,9 @@
 const c_waterstorage 	= 0;
 const c_petrol 			= 1;
 const c_field		 	= 2;
+const c_wood            = 3;
+
+const c_empty           = 99;
 
 class genericObject {
 	
@@ -19,6 +22,14 @@ class genericObject {
 	
 	static get FIELD(){
 		return c_field;
+	}
+
+	static get WOOD(){
+		return c_wood;
+	}
+
+	static get EMPTY(){
+		return c_empty;
 	}
 
 	constructor(i_type){

@@ -74,3 +74,29 @@ class field extends genericObject {
 	initialize(){		
 	}	
 }
+
+/*------------------------------------------------------------------------------*/
+/* Class for wood                                                                  */
+class wood extends genericObject {
+
+	constructor(){
+		super(genericObject.WOOD);		
+		this.setColor("brown");
+	}
+	
+	initialize(){		
+	}	
+}
+
+/*------------------------------------------------------------------------------*/
+/* Class for empty                                                                  */
+class empty extends genericObject {
+
+	constructor(){
+		super(genericObject.EMPTY);		
+		this.setColor("gray");
+	}
+	
+	initialize(){		
+	}	
+}
